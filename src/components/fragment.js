@@ -61,7 +61,7 @@ const resolveCurrentRoute = (parentRoute, currentRoute) => {
   const routeSuffix =
     currentIsRootRoute && !parentIsRootRoute ? '' : currentRoute;
 
-  const wildcard = currentIsRootRoute && parentIsRootRoute ? '' : '*';
+  const wildcard = currentIsRootRoute && parentIsRootRoute ? '*' : '';
 
   return `${routePrefix}${routeSuffix}${wildcard}`;
 };
